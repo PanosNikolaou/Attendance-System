@@ -11,11 +11,7 @@
 		<script type="text/javascript" src="js/dataTables.buttons.min.js"></script>
 		<script type="text/javascript" src="js/buttons.bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-
-<!-- 	
-		<script type="text/javascript" src="dist/js/highcharts.js"></script>
-		<script type="text/javascript" src="dist/js/jquery.highchartTable-min.js"></script> */
--->		
+		
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-table.min.css" />
 		<link rel="stylesheet" href="css/jquery.dataTables.min.css" />
@@ -24,7 +20,7 @@
 		<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 		
 				
-<script type="text/javascript" language="javascript" class="init">
+	<script type="text/javascript" language="javascript" class="init">
 
  		$(document).ready(function() {
 				
@@ -79,20 +75,20 @@
 				});
 		});
 			
-</script>
+		</script>
 	</head>
 	<body>
 	
- 	<nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Attendance System</a>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      	<div class="container-fluid">
+        	<div class="navbar-header">
+          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            		<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+          		</button>
+          	<a class="navbar-brand" href="#">Attendance System</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -100,8 +96,8 @@
             <li><a href="#">Help</a></li>
           </ul>		  
         </div>
-      </div>
-    </nav>
+      	</div>
+    	</nav>
 	<br>
 	<br> 
 	<br>	
@@ -116,9 +112,7 @@
                 <th data-field="user_id">User ID</th>
             </tr>
         </thead>
-			<tbody>
-			</tbody>
-    </table>
+    	</table>
 	<br>
 	<button type="button" id='whrsumit' class="btn btn-primary">Show selected user work dates and time</button>
 	</div>	
@@ -127,7 +121,7 @@
 	</div>
 	
 	<div class="panel-body">Datetime working period</div>
-    <div class='col-md-5'>
+    	<div class='col-md-5'>
         <div class="form-group">
             <div class='input-group date' id='datetimepicker6'>
                 <input type='text' placeholder="From" class="form-control" id="fdate" />
@@ -136,8 +130,8 @@
                 </span>
             </div>
         </div>
-    </div>
-    <div class='col-md-5'>
+    	</div>
+   	<div class='col-md-5'>
         <div class="form-group">
             <div class='input-group date' id='datetimepicker7'>
                 <input type='text' placeholder="To" class="form-control" id="sdate"/>
@@ -146,7 +140,7 @@
                 </span>
             </div>
         </div>
-    </div>
+    	</div>
 	<button type="button" id='btnsumit' class="btn btn-primary">Show user data</button>
 	<br>
 	<br>
@@ -163,8 +157,8 @@
         </table>
 	</div>	
 
-<script type="text/javascript">
-    $(function () {
+	<script type="text/javascript">
+    	$(function () {
         $('#datetimepicker6').datetimepicker({
 			format : 'YYYY/MM/DD HH:mm'
 		});
@@ -178,10 +172,10 @@
         $("#datetimepicker7").on("dp.change", function (e) {
             $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
         });
-    });
-</script>
-<br>
-    <div class="panel-footer">
+    	});
+	</script>
+	<br>
+    	<div class="panel-footer">
         <p class="text-muted">NIT</p>
 	</div>
 </body>
